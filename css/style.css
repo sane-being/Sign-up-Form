@@ -1,7 +1,54 @@
+/* logo font */
+@font-face { 
+    font-family: Norse_Bold; 
+    src: url('../assets/fonts/Norse_Bold.woff2') format(woff2); 
+}
+
 body {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.full-page {
+    flex: 1 1 100vh;
+    
+    display: flex;
     align-items: stretch;
 }
+
+.header {
+    flex: 0 1 35vw;
+    
+    background-image: url(../assets/images/odin-background.avif.avif);
+    background-color: hsl(41, 100%, 16%);
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+
+    div {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+
+        .logo {
+            flex: auto;
+            background-image: url(../assets/logos/odin-lined.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: Norse_Bold;
+        }
+    }
+}
+
+main {
+    
+}
+
+
   
+
+    

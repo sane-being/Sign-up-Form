@@ -8,57 +8,59 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div class="fillers"></div>
-            <div class="logo"></div>
-            <div class="fillers"></div>
-            <h1>ODIN</h1>
-        </div>
-        <p>
-            Photo by 
-            <a href="https://unsplash.com/@aarsoph">Kristijan Arsov</a> 
-            on 
-            <a href="https://unsplash.com/photos/closeup-photo-of-brown-wooden-statue-tcw3nwoAgvs">Unsplash</a>
-        </p>
-    </header>
-    <main>
-        <div class="head-text">
-            <p>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-            <p>You know you want to.</p>
-        </div>
-        <form action="/submit" method="post">
-            
-            <div class="form-box">
-                <p>Let's do this!</p>
-                
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required>
-                
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="phone">Enter your phone number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
-                
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-                
+    <div class="full-page">
+        <div class="header">
+            <div>
+                <div class="fillers"></div>
+                <div class="logo"></div>
+                <div class="fillers"></div>
+                <h1>ODIN</h1>
             </div>
-            <button type="submit">Create Account</button>
-        </form>
-        <div class="bottom-text">
             <p>
-                Already have an account?
-                <a href="">Log in</a>
+                Photo by
+                <a href="https://unsplash.com/@aarsoph">Kristijan Arsov</a>
+                on
+                <a href="https://unsplash.com/photos/closeup-photo-of-brown-wooden-statue-tcw3nwoAgvs">Unsplash</a>
             </p>
         </div>
-    </main>
+        <main>
+            <div class="head-text">
+                <p>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <form action="/submit" method="post">
+        
+                <div class="form-box">
+                    <p>Let's do this!</p>
+        
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+        
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+        
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+        
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <div class="bottom-text">
+                <p>
+                    Already have an account?
+                    <a href="">Log in</a>
+                </p>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
