@@ -16,8 +16,12 @@ body {
     align-items: stretch;
 }
 
-.header {
+.side-header {
     flex: 0 1 35vw;
+    min-width: fit-content;
+    
+    display: flex;
+    flex-direction: column;
     
     background-image: url(../assets/images/odin-background.avif.avif);
     background-color: hsl(41, 100%, 16%);
@@ -26,26 +30,52 @@ body {
 
     color: white;
 
-    div {
+    .filler-1 {
+        flex: 0 0 25vh;
+    }
+
+    .logo-line {
+        flex: 0 1 16vh;
+        
         display: flex;
         justify-content: center;
-        gap: 4px;
+        align-items: center;
 
-        .logo {
-            flex: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        #logo-image {
+            box-sizing: border-box;
+            flex: 0 0 12vh;
+            align-self: stretch;
             background-image: url(../assets/logos/odin-lined.png);
             background-position: center;
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: solid rgba(0, 0, 0, 0);
+            border-width: 2vh 0;
+            
         }
 
         h1 {
             font-family: Norse_Bold;
+            font-size: 12vh;
         }
+    }
+
+    .filler-2 {
+        flex: auto;
+    }
+
+    p {
+        padding: 16px;
+        font-size: 14px;
+
+        a { color: white;}
     }
 }
 
 main {
-    
+
 }
 
 
