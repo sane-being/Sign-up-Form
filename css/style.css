@@ -11,41 +11,63 @@ body {
 
 .full-page {
     flex: 1 1 100vh;
-    
+
     display: flex;
     align-items: stretch;
 }
 
-.header {
-    flex: 0 1 35vw;
-    
+.side-header {
+    flex: 0 1 40vw;
+    min-width: fit-content;
     background-image: url(../assets/images/odin-background.avif.avif);
     background-color: hsl(41, 100%, 16%);
     background-position: center;
     background-size: cover;
-
     color: white;
 
-    div {
+    display: flex;
+    flex-direction: column;
+
+    .filler-1 {
+        flex: 0 0 25vh;
+    }
+
+    .logo-line {
+        flex: 0 1 16vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        
         display: flex;
         justify-content: center;
-        gap: 4px;
 
-        .logo {
-            flex: auto;
+        #logo-image {
+            flex: 0 0 12vh;
+            align-self: stretch;
             background-image: url(../assets/logos/odin-lined.png);
             background-position: center;
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-width: 2vh 0;
+            border: solid rgba(0, 0, 0, 0);
         }
 
         h1 {
             font-family: Norse_Bold;
+            font-size: 12vh;
         }
+    }
+
+    .filler-2 { flex: 1 }
+
+    p {
+        padding: 16px;
+        font-size: 14px;
+
+        a { color: white;}
     }
 }
 
 main {
-    
+    flex: 1 0 0;
 }
 
 
